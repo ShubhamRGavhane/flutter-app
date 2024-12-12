@@ -27,7 +27,10 @@ class _RegisterScreenState extends State<RegisterScreen> {
       body: Container(
         decoration: const BoxDecoration(
           gradient: LinearGradient(
-            colors: [Color(0xFF6A11CB), Color(0xFF2575FC)],
+            colors: [
+              Color.fromARGB(255, 72, 110, 10),
+              Color.fromARGB(255, 115, 228, 100)
+            ],
             begin: Alignment.topLeft,
             end: Alignment.bottomRight,
           ),
@@ -43,13 +46,13 @@ class _RegisterScreenState extends State<RegisterScreen> {
                   const TextWidget(
                     text: "Create Account",
                     fontSize: 28,
-                    color: Colors.white,
+                    color: Colors.black,
                   ),
                   const SizedBox(height: 10),
                   const TextWidget(
                     text: "Register to get started",
                     fontSize: 16,
-                    color: Colors.white60,
+                    color: Colors.black,
                   ),
                   const SizedBox(height: 30),
                   buildTextField(
@@ -102,7 +105,10 @@ class _RegisterScreenState extends State<RegisterScreen> {
                       width: double.infinity,
                       decoration: BoxDecoration(
                         gradient: const LinearGradient(
-                          colors: [Color(0xFF6A11CB), Color(0xFF2575FC)],
+                          colors: [
+                            Color.fromARGB(255, 72, 110, 10),
+                            Color.fromARGB(255, 115, 228, 100)
+                          ],
                           begin: Alignment.centerLeft,
                           end: Alignment.centerRight,
                         ),
@@ -111,7 +117,7 @@ class _RegisterScreenState extends State<RegisterScreen> {
                       alignment: Alignment.center,
                       child: const TextWidget(
                         text: "Register",
-                        color: Colors.white,
+                        color: Colors.black,
                         fontSize: 18,
                         fontWeight: FontWeight.bold,
                       ),
@@ -123,7 +129,7 @@ class _RegisterScreenState extends State<RegisterScreen> {
                     children: [
                       const TextWidget(
                         text: "Already have an account?",
-                        color: Colors.white,
+                        color: Colors.black,
                       ),
                       GestureDetector(
                         onTap: () {
@@ -159,13 +165,13 @@ class _RegisterScreenState extends State<RegisterScreen> {
     return TextFormField(
       controller: controller,
       obscureText: obscureText,
-      style: const TextStyle(color: Colors.white),
+      style: const TextStyle(color: Colors.black),
       decoration: InputDecoration(
         filled: true,
-        fillColor: Colors.white.withOpacity(0.1),
+        fillColor: Colors.black.withOpacity(0.1),
         hintText: hintText,
-        hintStyle: const TextStyle(color: Colors.white70),
-        prefixIcon: Icon(icon, color: Colors.white),
+        hintStyle: const TextStyle(color: Colors.black),
+        prefixIcon: Icon(icon, color: Colors.black),
         border: OutlineInputBorder(
           borderRadius: BorderRadius.circular(15),
           borderSide: BorderSide.none,

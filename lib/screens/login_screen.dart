@@ -38,7 +38,10 @@ class _LoginScreenState extends State<LoginScreen> {
       body: Container(
         decoration: const BoxDecoration(
           gradient: LinearGradient(
-            colors: [Color(0xFF6A11CB), Color(0xFF2575FC)],
+            colors: [
+              Color.fromARGB(255, 72, 110, 10),
+              Color.fromARGB(255, 115, 228, 100)
+            ],
             begin: Alignment.topLeft,
             end: Alignment.bottomRight,
           ),
@@ -54,24 +57,24 @@ class _LoginScreenState extends State<LoginScreen> {
                   const TextWidget(
                     text: "Welcome Back!",
                     fontSize: 28,
-                    color: Colors.white,
+                    color: Colors.black,
                   ),
                   const SizedBox(height: 10),
                   const TextWidget(
                     text: "Login to your account",
                     fontSize: 16,
-                    color: Colors.white60,
+                    color: Colors.black,
                   ),
                   const SizedBox(height: 30),
                   TextFormField(
                     controller: _emailController,
-                    style: const TextStyle(color: Colors.white),
+                    style: const TextStyle(color: Colors.black),
                     decoration: InputDecoration(
                       filled: true,
-                      fillColor: Colors.white.withOpacity(0.1),
+                      fillColor: Colors.black.withOpacity(0.1),
                       hintText: "Email",
-                      hintStyle: const TextStyle(color: Colors.white70),
-                      prefixIcon: const Icon(Icons.mail, color: Colors.white),
+                      hintStyle: const TextStyle(color: Colors.black),
+                      prefixIcon: const Icon(Icons.mail, color: Colors.black),
                       border: OutlineInputBorder(
                         borderRadius: BorderRadius.circular(15),
                         borderSide: BorderSide.none,
@@ -85,13 +88,13 @@ class _LoginScreenState extends State<LoginScreen> {
                   TextFormField(
                     controller: _passwordController,
                     obscureText: true,
-                    style: const TextStyle(color: Colors.white),
+                    style: const TextStyle(color: Colors.black),
                     decoration: InputDecoration(
                       filled: true,
-                      fillColor: Colors.white.withOpacity(0.1),
+                      fillColor: Colors.black.withOpacity(0.1),
                       hintText: "Password",
-                      hintStyle: const TextStyle(color: Colors.white70),
-                      prefixIcon: const Icon(Icons.lock, color: Colors.white),
+                      hintStyle: const TextStyle(color: Colors.black),
+                      prefixIcon: const Icon(Icons.lock, color: Colors.black),
                       border: OutlineInputBorder(
                         borderRadius: BorderRadius.circular(15),
                         borderSide: BorderSide.none,
@@ -114,7 +117,7 @@ class _LoginScreenState extends State<LoginScreen> {
                         ),
                       ),
                       const TextWidget(
-                          text: "Remember Me", color: Colors.white),
+                          text: "Remember Me", color: Colors.black),
                     ],
                   ),
                   const SizedBox(height: 30),
@@ -138,7 +141,10 @@ class _LoginScreenState extends State<LoginScreen> {
                       width: double.infinity,
                       decoration: BoxDecoration(
                         gradient: const LinearGradient(
-                          colors: [Color(0xFF6A11CB), Color(0xFF2575FC)],
+                          colors: [
+                            Color.fromARGB(255, 72, 110, 10),
+                            Color.fromARGB(255, 115, 228, 100)
+                          ],
                           begin: Alignment.centerLeft,
                           end: Alignment.centerRight,
                         ),
@@ -147,7 +153,7 @@ class _LoginScreenState extends State<LoginScreen> {
                       alignment: Alignment.center,
                       child: const TextWidget(
                         text: "Log In",
-                        color: Colors.white,
+                        color: Colors.black,
                         fontSize: 18,
                         fontWeight: FontWeight.bold,
                       ),
@@ -159,7 +165,7 @@ class _LoginScreenState extends State<LoginScreen> {
                     children: [
                       const TextWidget(
                         text: "Don't have an account?",
-                        color: Colors.white,
+                        color: Colors.black,
                       ),
                       GestureDetector(
                         onTap: () {
