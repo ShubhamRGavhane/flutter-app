@@ -11,7 +11,7 @@ class HomeScreen extends StatelessWidget {
       Get.put(ImageController(UnsplashApiService()));
   final SearchHistoryController searchHistoryController =
       Get.put(SearchHistoryController(FirebaseFirestore.instance));
-  final CarouselController carouselController = CarouselController();
+  // final CarouselController carouselController = CarouselController();
 
   HomeScreen({super.key});
 

@@ -16,6 +16,6 @@ class SearchHistoryController extends GetxController {
 
   Future<void> fetchSearchHistory() async {
     final snapshot = await firestore.collection('search_history').get();
-    searchHistory.assignAll(snapshot.docs.map((doc) => SearchHistoryModel.fromMap(doc.data()!)).toList());
+    searchHistory.assignAll(snapshot.docs.map((doc) => SearchHistoryModel.fromMap(doc.data())).toList());
   }
 }
